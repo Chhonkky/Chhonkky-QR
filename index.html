@@ -84,6 +84,37 @@
       color: rgba(255,249,214,0.85);
     }
  
+    /* ── PRICING STRIP ── */
+    .pricing-strip {
+      background: rgba(245, 200, 0, 0.08);
+      border-top: 1px solid rgba(245,200,0,0.15);
+      border-bottom: 1px solid rgba(245,200,0,0.15);
+      padding: 14px 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .pricing-strip span {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(255,249,214,0.9);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .pricing-strip strong {
+      color: var(--yellow);
+      font-weight: 700;
+    }
+    .pricing-strip .dot {
+      color: rgba(245,200,0,0.3);
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+ 
     /* ── GRID ── */
     .grid {
       display: grid;
@@ -205,10 +236,19 @@
       text-transform: uppercase;
       border-top: 1px solid rgba(255,255,255,0.08);
       margin-top: 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
     .footer strong {
       color: var(--yellow);
       font-weight: 500;
+    }
+    .footer-tagline {
+      color: rgba(255,255,255,0.3);
+      font-size: 0.75rem;
+      letter-spacing: 2px;
     }
     .footer-social {
       display: flex;
@@ -389,7 +429,12 @@
   </main>
  
   <footer class="footer">
-    <strong>CHHONKKY</strong> &nbsp;·&nbsp; Handmade with love &nbsp;·&nbsp; All items freshly baked
+    <div class="pricing-strip">
+      <span>Box of 4 &nbsp;<strong>₹599/-</strong></span>
+      <span class="dot">·</span>
+      <span>Box of 8 &nbsp;<strong>₹999/-</strong></span>
+    </div>
+    <div class="footer-tagline"><strong>CHHONKKY</strong> &nbsp;·&nbsp; Handmade with love &nbsp;·&nbsp; All items freshly baked</div>
     <div class="footer-social">
       <!-- Instagram -->
       <a href="https://www.instagram.com/chhonkky?igsh=YmR2Z2pyZWdkY2x3&utm_source=qr" target="_blank" aria-label="Instagram">
